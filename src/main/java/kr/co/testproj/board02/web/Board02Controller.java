@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 
 import kr.co.testproj.board02.service.Board02Service;
 import kr.co.testproj.board02.vo.Board02VO;
-import kr.co.testproj.main.vo.MainVO;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,6 +37,7 @@ public class Board02Controller {
 		if(end>board02LastPage) end = board02LastPage;
 		
 		model.addAttribute("board02Result",board02Service.getBoard02Result());
+		
 		model.addAttribute("board02List", board02Service.getBoard02ListResult(page));
 		model.addAttribute("board02FirstPage", board02FirstPage);
 		model.addAttribute("board02PrevPage", board02PrevPage);

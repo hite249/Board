@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="kr.co.testproj.board02.service.impl.Board02ServiceMapper">
+<mapper namespace="kr.co.testproj.board02.service.impl.Board02Mapper">
 	
 	
 	<select id="getBoard02TotalCount" resultType="int">
 		SELECT COUNT(*) FROM BOARD02
 	</select>
 	
-	<select id="getBoardResult" resultType="string">
+	<select id="getBoard02Result" resultType="string">
 		SELECT SUBJECT FROM BOARD02 WHERE NO = '1'
 	</select>
 	

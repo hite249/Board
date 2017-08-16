@@ -9,7 +9,9 @@ import kr.co.testproj.util.annotation.Mapper;
 public interface Board02Mapper {
 	
 	int getBoard02TotalCount();
+	
 	String getBoard02Result();
+	
 	List<Board02VO> getBoard02ListResult(int page);
 	Board02VO getBoard02View(int no);
 	int insertBoard02Item(Board02VO board02VO);
