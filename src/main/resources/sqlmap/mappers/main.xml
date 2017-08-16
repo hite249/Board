@@ -10,7 +10,7 @@
 		SELECT SUBJECT FROM BOARD WHERE NO = '1'
 	</select>
 	
-	<select id="getListResult" parameterType="int" resultType="mainVO">
+	<select id="getListResult" parameterType="mainVO" resultType="mainVO">
 		SELECT
 			*
 		FROM (

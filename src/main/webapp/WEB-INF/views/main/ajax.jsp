@@ -15,11 +15,13 @@
 		
 		function loadPage(page) {
 			showLoading();
+			var param = {page:page};
+			var json = JSON.stringify(param);
 			$.ajax({
 				contentType:"application/json; charset=utf-8",
 	        	type:"POST",
 	        	url:"/main/data/boardList.do",      
-	        	data:""+page,      
+	        	data:json,      
 	        	success:function(result){
 	        		var htmlString = "";
 	        		for( var i=0;i<result.boardList.length;i++ ) {

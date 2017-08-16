@@ -27,13 +27,13 @@ public class MainServiceImpl implements MainService {
 	}
 
 	@Override
-	public List<MainVO> getListResult(int page) {
-		return mainMapper.getListResult(page);
+	public List<MainVO> getListResult(MainVO mainVO) {
+		return mainMapper.getListResult(mainVO);
 	}
 
 	@Override
-	public MainVO getBoardView(int no) {
-		return mainMapper.getBoardView(no);
+	public MainVO getBoardView(MainVO mainVO) {
+		return mainMapper.getBoardView(mainVO);
 	}
 
 	@Override

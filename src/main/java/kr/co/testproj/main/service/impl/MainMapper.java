@@ -13,8 +13,8 @@ public interface MainMapper {
 	
 	String getResult();
 	
-	List<MainVO> getListResult(int page);
-	MainVO getBoardView(int no);
+	List<MainVO> getListResult(MainVO mainVO);
+	MainVO getBoardView(MainVO mainVO);
 	int insertBoardItem(MainVO mainVO);
 	int updateBoardItem(MainVO mainVO);
 	int deleteBoardItem(MainVO mainVO);

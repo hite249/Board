@@ -1,10 +1,17 @@
 package kr.co.testproj.main.vo;
 
 public class MainVO {
+	private int page = 1;
 	private String rn;
 	private String no;
 	private String subject;
 	private String content;
+	public int getPage() {
+		return page;
+	}
+	public void setPage(int page) {
+		this.page = page;
+	}
 	public String getRn() {
 		return rn;
 	}
@@ -31,8 +38,8 @@ public class MainVO {
 	}
 	@Override
 	public String toString() {
-		return "MainVO [rn=" + rn + ", no=" + no + ", subject=" + subject
-				+ ", content=" + content + "]";
+		return "MainVO [page=" + page + ", rn=" + rn + ", no=" + no
+				+ ", subject=" + subject + ", content=" + content + "]";
 	}
 	
 }
