@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+		<typeAlias alias="mainVO" type="kr.co.testproj.main.vo.MainVO"/>
+		<typeAlias alias="boardVO" type="kr.co.testproj.board01.vo.BoardVO"/>
+		<typeAlias alias="board02VO" type="kr.co.testproj.board02.vo.Board02VO"/>
+    </typeAliases>
+</configuration>

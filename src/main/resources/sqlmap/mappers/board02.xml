@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.testproj.board02.service.impl.Board02ServiceMapper">
+	
+	
+	<select id="getBoard02TotalCount" resultType="int">
+		SELECT COUNT(*) FROM BOARD02
+	</select>
+	
+	<select id="getBoardResult" resultType="string">
+		SELECT SUBJECT FROM BOARD02 WHERE NO = '1'
+	</select>
+	
+	<select id="getBoard02ListResult" parameterType="int" resultType="board02VO">
+		SELECT
+			*
+		FROM (
+			SELECT
+				ROWNUM RN,
+				NO,
+				SUBJECT
+			FROM BOARD02
+ 		)
+ 		WHERE RN BETWEEN (#{page}*10)-9 AND #{page}*10
+ 		
+	</select>
+	
+	<select id="getBoard02View" parameterType="int" resultType="board02VO">
+		SELECT
+			NO,
+			SUBJECT,
+			CONTENT
+		FROM BOARD02
+		WHERE NO = #{no}
+	</select>
+	
+	<update id="updateBoard02Item" parameterType="board02VO">
+		UPDATE BOARD02
+		SET SUBJECT =#{subject},
+			CONTENT =#{content}
+		WHERE NO = #{no}	
+	</update>
+	
+	<delete id="deleteBoard02Item" parameterType="board02VO">
+		DELETE BOARD02 WHERE NO = #{no}
+	</delete>
+</mapper>
