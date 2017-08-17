@@ -96,4 +96,14 @@ public class MainController {
 	public String map(Model model) {
 		return "/main/map";
 	}
+	
+	@RequestMapping(value = "/main/map2.do")
+	public String map2(Model model) {
+		return "/main/map2";
+	}
+	
+	@RequestMapping(value = "/main/map3.do")
+	public String map3(Model model) {
+		return "/main/map3";
+	}
 }

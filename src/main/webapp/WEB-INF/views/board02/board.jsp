@@ -5,10 +5,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	
+	
 <title>게시판2</title>
 	<script type="text/javascript" src="/resources/js/jquery/jquery-3.2.1.min.js"></script>
 </head>
+
+
+
+ 
 <body>
 	<input type="button" value ="메인" onclick="location.href='/main/main.do'" >
 	<input type="button" value ="게시판01" onclick="location.href='/board01/board.do'" >
@@ -37,4 +44,7 @@
 <a href="/board02/board.do?page=${board02NextPage}">다음</a>
 <a href="/board02/board.do?page=${board02LastPage}">끝</a>
 </body>
+
+
+
 </html>

@@ -22,7 +22,7 @@
 	<td><input type="text" name="content" id="content" value="${item.content}" /></td>
 </tr>
 <tr>
-	<th>?????</th>
+	<th>Update</th>
 	<td><a href="javascript:updateCheck();">업데이트</a></td>
 </tr>
 </table>

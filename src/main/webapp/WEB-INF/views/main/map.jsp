@@ -117,7 +117,7 @@
 	};
 	
 	function drawPolygon() {
-        toolbar.activate("point");
+        toolbar.activate("polygon");
 	}
 	function clearPolygon() {
         toolbar.deactivate();
