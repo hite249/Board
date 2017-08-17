@@ -110,7 +110,7 @@
         
       }
     );
-    
+    //test
 	function zoomToLayer(layerId) {
 		var zoomExtent = esri.graphicsExtent(map.getLayer(layerId).graphics);
 		map.setExtent(zoomExtent);
